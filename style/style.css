@@ -25,17 +25,20 @@
     font-family:'FG Medium Cond';
 }
 
+body{
+    overflow-y: scroll; 
+}
+
 @media screen and (min-width: 1025px) {
     #header{
-        height:100px;
+        height:105px;
         background-color: #FFF;
 
 
         display: flex;
         align-items: center;
-        justify-content: center;
         
-        filter:drop-shadow(0px 5px 2px #c0c0c0);
+        /*filter:drop-shadow(0px 5px 2px #c0c0c0);*/
 
         position:sticky;
         top:0;
@@ -54,23 +57,60 @@
         height:80px;
     }
 
+    .header-opt-con{
+        position:absolute;
+        right:0px;
+        text-transform: uppercase;
+        height:100%;
+        display:flex;
+        align-items: center;
+        float: left;
+    }
+
+    .header-opt-con a {
+        color: #3F6E45;
+        text-align: center;
+        text-decoration: none;
+        
+        font-size: 23px;
+        font-family:'FG Demi Cond';
+
+        height:100%;
+        padding:0px 35px;
+        
+        display:flex;
+        align-items: center;
+
+        transition: 
+            background-color 0.2s ease-in-out,
+            color 0.2s ease-in-out;
+        ;
+    }
+
+    .header-opt-con a:hover {
+        background-color: #ddd;
+        color: #09935e;
+    }
+
+    .header-opt-con a.active {
+        background-color: #ffffff;
+        color: #c4c4c4;
+    }
+
     .line{
-        height:9px;
+        height:5px;
         background-color: #CECECE;
+        width:100%;
+        position:absolute;
+        bottom:0px;
     }
 
     .img-display{
         background-position: center center;
         background-repeat: no-repeat;
         overflow: hidden;
-    }
+        position:relative;
 
-    .img-display img{
-        max-width: 100%;
-        min-height:400px;
-        max-height:400px;
-        display: block;
-    
         /*
         mask-image: linear-gradient(
             to bottom,
@@ -83,16 +123,195 @@
             transparent 100%
         );
         */
+    }
+
+    .img-display::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        
+        background-color: rgba(0, 0, 0, 0.5); 
+        
+        z-index: 1; 
+
+    }
+
+    .img-display img{
+        max-width: 100%;
+        display: block;
+        min-height:500px;
+        max-height:500px;
 
         object-fit: cover;
     }
 
+   .img-display-text {
+        position: absolute; 
+        top: 48%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        z-index: 10; 
+        
+        color: rgb(255, 255, 255); 
+        font-size: 60px;
+        text-align: center;
+        font-family:'FG Medium Cond';
+        width:80%;
+    }
+
+
+
+
+    .h-sec1{
+        width:90%;
+        margin:auto;
+        display:flex;
+        align-items: center;
+    }
+
+    .h-sec1 img{
+        height:270px;
+    }
+
+    .h-sec1-desc-con{
+        flex-grow: 1;
+        padding-left:50px;
+    }
+
+    .h-sec1-title{
+        font-family:'FG Demi Cond';
+        font-size:50px;
+        color:#3F6E45;
+    }
+
+    .h-sec1-desc{
+        font-family:'FG Medium Cond';
+        font-size:22px;
+        color:#3F6E45;
+    }
+
+    .highlight{
+        color:#10b682;
+    }
+
+
+
+    .h-sec2-header-con{
+        width:100%;
+        height:200px;
+        background-color: #056C45;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-family: 'FG Demi Cond';
+        font-size:50px;
+        color:#ffffff;
+    }
+
+    .h-sec2-desc{
+        font-family:'FG Medium Cond';
+        font-size:22px;
+        color:#3F6E45;
+        width:100%;
+        text-align: center;
+    }
+
+    .h-sec2-picrow{
+        width:100%;
+        height:320px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .h-sec2-picrow img{
+        height: 100%;
+    }
+
+    
+
+
+
+    .h-sec3-con{
+        position: relative;
+        width:100%;
+        background-color: #94C5B3;
+        padding:30px;
+    }
+
+    .h-sec3-title{
+        font-family:'FG Demi Cond';
+        font-size:50px;
+        color:#056C45;
+        padding-left: 30px;
+    }
+
+    .h-sec3-latestpost{
+        font-family:'FG Demi Cond';
+        font-size:20px;
+        color:#3F6E45;
+        padding-left: 35px;
+    }
+
+    .h-sec3-button{
+        font-family:'FG Demi Cond';
+        font-size:25px;
+        color: #fff;;
+        padding: 20px 30px;
+        background-color: #056C45;
+
+        position:absolute;
+        right:60px;
+        top:40px;
+
+        transition: transform 0.3s ease-in-out;
+        filter:drop-shadow(0px 0px 2px #000000);
+    }
+
+    .h-sec3-button:hover{
+        transform: scale(1.02);
+        filter:drop-shadow(0px 2px 5px #242424);
+    }
+
+
+
+
+    .b-header{
+        width:100%;
+        background-color: #056C45;
+        color:#fff;
+        padding:5px;
+
+        font-family:'FG Demi Cond';
+        font-size:50px;
+        color: #fff;;
+
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
     .prev-posts-con{
         min-height:300px;
-        width:75%;
+        width:90%;
         margin:auto;
     }
 
+    .prev-posts-title{
+        font-family:'FG Demi Cond';
+        font-size:50px;
+        color:#3F6E45;
+    }
 
     .prev-post-con{
         height:auto;
@@ -105,7 +324,7 @@
     }
 
     .prev-post-con:hover {
-        transform: scale(1.1);
+        transform: scale(1.02);
         filter:drop-shadow(0px 2px 8px #adadad);
     }
 
@@ -149,6 +368,12 @@
         margin:auto;
     }
 
+
+
+
+
+
+
     .post-header-con{
     
     }
@@ -185,6 +410,82 @@
     #comments-section{
         margin: 0 auto;
     }
+
+    .back-button{
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%); 
+        
+        color: #273f2b;
+        font-size: 30px;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px; /* Space for the oval */
+        border-radius: 50%;
+        
+        transition: transform 0.3s ease-out; 
+    }
+
+    .back-button:hover{
+        transform: translateX(-5px) translateY(-50%);
+        cursor: pointer;
+    }
+    
+     .back-button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background-color: #e0e0e0;
+        border-radius: inherit;
+
+        opacity: 0;
+        transform: scale(0.8);
+        transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+
+        z-index: -1;
+    }
+
+    .back-button:hover::before {
+        opacity: 1;
+        transform: scale(1.1); /* Slightly expand the oval */
+    }
+
+    .back-button::after {
+        font-family:'FG Demi Cond';
+        content: "BACK"; /* The actual text content */
+        position: absolute;
+        
+        /* Positioning the text to the right of the icon/oval */
+        left: 100%; 
+        top: 50%;
+        transform: translateY(-50%);
+
+        /* Text styling and making it invisible initially */
+        color: #3f6e45; 
+        font-size: 16px; 
+        white-space: nowrap; /* Prevents text from wrapping */
+        padding-left: 10px; /* Small gap between the oval and the text */
+        opacity: 0; 
+
+        /* Animation on opacity and a slight left-to-right slide */
+        transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+        
+        /* Optional: Start text slightly to the left for the slide-in effect */
+        transform: translateY(-50%) translateX(-10px); 
+    }
+
+    .back-button:hover::after {
+        opacity: 1; /* Make fully visible on hover */
+        /* Returns the text to its correct position (no horizontal slide) */
+        transform: translateY(-50%) translateX(0); 
+    }
 }
 
 ion-icon{
@@ -194,4 +495,13 @@ ion-icon{
 
 a {
     text-decoration: none;
+}
+
+
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
 }
