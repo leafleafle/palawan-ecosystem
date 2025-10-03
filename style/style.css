@@ -29,9 +29,9 @@ body{
     overflow-y: scroll; 
 }
 
-@media screen and (min-width: 1025px) {
+
     #header{
-        height:105px;
+        height:95px;
         background-color: #FFF;
 
 
@@ -363,10 +363,10 @@ body{
     }
 
 
-    .post-main-con{
-        width:85%;
-        margin:auto;
-    }
+
+
+
+
 
 
 
@@ -389,7 +389,7 @@ body{
     .post-title{
         font-family:'FG Demi Cond';
         font-size:50px;
-        color:#3F6E45;
+        color:#355f3c;
     }
 
     .post-time{
@@ -406,6 +406,31 @@ body{
         height:2px;
         width:100%;
     }
+
+    .post-main-con{
+        width:85%;
+        margin:auto;
+    }
+    
+    .post-con{
+        font-family:'FG Medium Cond';
+        font-size:22px;
+        color:#355f3c;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     #comments-section{
         margin: 0 auto;
@@ -486,7 +511,40 @@ body{
         /* Returns the text to its correct position (no horizontal slide) */
         transform: translateY(-50%) translateX(0); 
     }
-}
+
+    .post-enum{
+        display:inline-block;
+        filter:drop-shadow(0px 0px 1px #4d4d4d);
+        padding:20px 50px;
+        background-color: #fff;
+        width:auto;
+    }
+
+
+    .post-enum ul a{
+        color:#10b682;
+        text-decoration: underline;
+    }
+
+    .post-heading{
+        font-family:'FG Demi Cond';
+        font-size:25px;
+        color:#355f3c;
+    }
+    
+    section{
+        scroll-margin-top: 100px;
+    }
+
+
+    #mining img{
+        height:200px;
+    }
+
+
+
+
+
 
 ion-icon{
     position:relative;
@@ -497,6 +555,10 @@ a {
     text-decoration: none;
 }
 
+.a-highlight{
+    color:#10b682;
+    text-decoration: underline;
+}
 
 .no-select {
   user-select: none;
