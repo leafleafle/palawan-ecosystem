@@ -1,219 +1,57 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 @font-face {
-      font-family: 'Franklin Gothic Heavy'; /* Choose a descriptive name for your font */
-      src: url('Franklin Gothic Heavy Regular.ttf') format('truetype'); /* Adjust the path to your .ttf file */
-      font-weight: normal; /* Optional: Define font weight if needed */
-      font-style: normal; /* Optional: Define font style if needed */
-    }
-
-@media screen and (max-width: 399px) {
-    #header{
-        height:19vw;
-        background-color: #FFF;
-        box-shadow: 0px 5px #CECECE;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .header-text{
-        font-family: 'Franklin Gothic Heavy';
-        font-size:9vw;
-
-        position:relative;
-        top:6px;
-    }
-
-    .header-img{
-        height:12vw;
-    }
-
-    .line{
-        height:1vw;
-        background-color: #CECECE;
-    }
-
-    .img-display{
-        background-position: center center;
-        background-repeat: no-repeat;
-        overflow: hidden;
-    }
-
-    .img-display img{
-        max-width: 100%;
-        min-height:400px;
-        max-height:400px;
-        display: block; /* Removes extra space below the image */
-    
-    /* Create a linear gradient mask that fades from opaque to transparent */
-    mask-image: linear-gradient(
-        to bottom,
-        black 70%, /* Image is fully visible up to 60% of its height */
-        transparent 100% /* Image fades to transparent over the last 40% */
-    );
-    -webkit-mask-image: linear-gradient(
-        to bottom,
-        black 70%,
-        transparent 100%
-    );
-
-    object-fit: cover;
-    }
-
-    .post-con{
-        min-height:300px;
-        background-color: green;
-        width:80%;
-        margin:auto;
-    }
+    font-family: 'FG Heavy';
+    src: url('Franklin Gothic Heavy Regular.ttf') format('truetype'); /* Adjust the path to your .ttf file */
+    font-weight: normal; /* Optional: Define font weight if needed */
+    font-style: normal; /* Optional: Define font style if needed */
 }
 
-
-@media screen and (min-width: 400px) and (max-width: 600px) {
-    #header{
-        height:19vw;
-        background-color: #FFF;
-        box-shadow: 0px 5px #CECECE;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .header-text{
-        font-family: 'Franklin Gothic Heavy';
-        font-size:9vw;
-
-        position:relative;
-        top:6px;
-    }
-
-    .header-img{
-        height:12vw;
-    }
-
-    .line{
-        height:1vw;
-        background-color: #CECECE;
-    }
-
-    .img-display{
-        background-position: center center;
-        background-repeat: no-repeat;
-        overflow: hidden;
-    }
-
-    .img-display img{
-        max-width: 100%;
-        min-height:400px;
-        max-height:400px;
-        display: block; /* Removes extra space below the image */
-    
-    /* Create a linear gradient mask that fades from opaque to transparent */
-    mask-image: linear-gradient(
-        to bottom,
-        black 70%, /* Image is fully visible up to 60% of its height */
-        transparent 100% /* Image fades to transparent over the last 40% */
-    );
-    -webkit-mask-image: linear-gradient(
-        to bottom,
-        black 70%,
-        transparent 100%
-    );
-
-    object-fit: cover;
-    }
-
-    .post-con{
-        min-height:300px;
-        background-color: green;
-        width:70%;
-        margin:auto;
-    }
+@font-face {
+    font-family: 'FG Demi Cond'; /* Choose a descriptive name for your font */
+    src: url('Franklin Gothic Demi Cond Regular.ttf') format('truetype'); /* Adjust the path to your .ttf file */
+    font-weight: normal; /* Optional: Define font weight if needed */
+    font-style: normal; /* Optional: Define font style if needed */
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    #header{
-        height:19vw;
-        background-color: #FFF;
-        box-shadow: 0px 5px #CECECE;
+@font-face {
+    font-family: 'FG Medium Cond'; /* Choose a descriptive name for your font */
+    src: url('Franklin Gothic Medium Cond Regular.ttf') format('truetype'); /* Adjust the path to your .ttf file */
+    font-weight: normal; /* Optional: Define font weight if needed */
+    font-style: normal; /* Optional: Define font style if needed */
+}
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .header-text{
-        font-family: 'Franklin Gothic Heavy';
-        font-size:9vw;
-
-        position:relative;
-        top:6px;
-    }
-
-    .header-img{
-        height:12vw;
-    }
-
-    .line{
-        height:1vw;
-        background-color: #CECECE;
-    }
-
-    .img-display{
-        background-position: center center;
-        background-repeat: no-repeat;
-        overflow: hidden;
-    }
-
-    .img-display img{
-        max-width: 100%;
-        min-height:400px;
-        max-height:400px;
-        display: block; /* Removes extra space below the image */
-    
-    /* Create a linear gradient mask that fades from opaque to transparent */
-    mask-image: linear-gradient(
-        to bottom,
-        black 70%, /* Image is fully visible up to 60% of its height */
-        transparent 100% /* Image fades to transparent over the last 40% */
-    );
-    -webkit-mask-image: linear-gradient(
-        to bottom,
-        black 70%,
-        transparent 100%
-    );
-
-    object-fit: cover;
-    }
-
-    .post-con{
-        min-height:300px;
-        background-color: green;
-        width:70%;
-        margin:auto;
-    }
+*{
+    font-family:'FG Medium Cond';
 }
 
 @media screen and (min-width: 1025px) {
     #header{
-        height:108px;
+        height:100px;
         background-color: #FFF;
-        box-shadow: 0px 5px #CECECE;
+
 
         display: flex;
         align-items: center;
         justify-content: center;
+        
+        filter:drop-shadow(0px 5px 2px #c0c0c0);
+
+        position:sticky;
+        top:0;
+        z-index: 99;
     }
 
     .header-text{
-        font-family: 'Franklin Gothic Heavy';
-        font-size:60px;
+        font-family: 'FG Heavy';
+        font-size:55px;
 
         position:relative;
         top:6px;
+    }
+
+    .header-img{
+        height:80px;
     }
 
     .line{
@@ -231,27 +69,129 @@
         max-width: 100%;
         min-height:400px;
         max-height:400px;
-        display: block; /* Removes extra space below the image */
+        display: block;
     
-    /* Create a linear gradient mask that fades from opaque to transparent */
-    mask-image: linear-gradient(
-        to bottom,
-        black 70%, /* Image is fully visible up to 60% of its height */
-        transparent 100% /* Image fades to transparent over the last 40% */
-    );
-    -webkit-mask-image: linear-gradient(
-        to bottom,
-        black 70%,
-        transparent 100%
-    );
+        /*
+        mask-image: linear-gradient(
+            to bottom,
+            black 70%,
+            transparent 100%
+        );
+        -webkit-mask-image: linear-gradient(
+            to bottom,
+            black 70%,
+            transparent 100%
+        );
+        */
 
-    object-fit: cover;
+        object-fit: cover;
     }
 
-    .post-con{
+    .prev-posts-con{
         min-height:300px;
-        background-color: green;
-        width:70%;
+        width:75%;
         margin:auto;
     }
+
+
+    .prev-post-con{
+        height:auto;
+        display:flex;
+        padding:20px;
+        background-color: #FFF;
+        filter:drop-shadow(0px 0px 1px #adadad);
+
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .prev-post-con:hover {
+        transform: scale(1.1);
+        filter:drop-shadow(0px 2px 8px #adadad);
+    }
+
+    .prev-post-con img{
+        height:200px;
+        width:266.7px;
+        background-color: red;
+    }
+
+    .prev-post-deets{
+        flex-grow: 1;
+
+        padding-left:20px;
+    }
+
+    .prev-post-time{
+        color:#A3A3A3;
+    }
+
+
+    .prev-post-title{
+        font-family:'FG Demi Cond';
+        font-size:30px;
+        color:#3F6E45;
+    }
+
+    .prev-post-line{
+        background-color: #D9D9D9;
+        height:2px;
+        width:100%;
+    }
+
+    .prev-post-text{
+        color:#3F6E45;
+        font-size: 20px;
+    }
+
+
+    .post-main-con{
+        width:85%;
+        margin:auto;
+    }
+
+    .post-header-con{
+    
+    }
+
+    .post-header-content{
+        display:flex;
+    }
+
+    .post-header-text{
+        flex-grow: 1;
+    }
+
+    .post-title{
+        font-family:'FG Demi Cond';
+        font-size:50px;
+        color:#3F6E45;
+    }
+
+    .post-time{
+        color:#A3A3A3;
+        font-size: 17px;
+    }
+
+    .post-header-content img{
+        height:120px;
+    }
+
+    .post-line{
+        background-color: #D9D9D9;
+        height:2px;
+        width:100%;
+    }
+
+    #comments-section{
+        margin: 0 auto;
+    }
+}
+
+ion-icon{
+    position:relative;
+    top:2px;
+}
+
+a {
+    text-decoration: none;
 }
