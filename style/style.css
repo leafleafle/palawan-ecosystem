@@ -142,8 +142,8 @@ body{
     .img-display img{
         max-width: 100%;
         display: block;
-        min-height:500px;
-        max-height:500px;
+        min-height:600px;
+        max-height:600px;
 
         object-fit: cover;
     }
@@ -538,9 +538,35 @@ body{
 
 
     #mining img{
-        height:200px;
+        height:400px;
+        display:block;
+        margin:auto;
     }
 
+    #deforestation img{
+        height:400px;
+        position: relative;
+        display:block;
+        margin:auto;
+    }
+
+    #agricultural-expansion img{
+        display:block;
+        margin:auto;
+        height:400px;
+    }
+
+    #pollution img{
+        display:block;
+        margin:auto;
+        height:350px;
+    }
+
+    #poaching img{
+        display:block;
+        margin:auto;
+        height:370px;
+    }
 
 
 
@@ -558,6 +584,16 @@ a {
 .a-highlight{
     color:#10b682;
     text-decoration: underline;
+}
+
+
+.a-source{
+    color:#10b682;
+    text-decoration: underline;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin:0 auto;
 }
 
 .no-select {
