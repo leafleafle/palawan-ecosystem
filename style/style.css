@@ -45,6 +45,11 @@ body{
         z-index: 99;
     }
 
+    #header a{
+        display:flex;
+        align-items: center;
+    }
+
     .header-text{
         font-family: 'FG Heavy';
         font-size:50px;
@@ -597,6 +602,14 @@ body{
 
 
 
+    .resources-enum{
+        display:block;
+        filter:drop-shadow(0px 0px 1px #4d4d4d);
+        padding:20px 50px;
+        background-color: #fff;
+        box-sizing: border-box; 
+        overflow-wrap: break-word;
+    }
 
 
 
@@ -626,7 +639,7 @@ a {
     margin:0 auto;
 }
 
-.no-select {
+.no-select, #header {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
