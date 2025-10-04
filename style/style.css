@@ -31,7 +31,7 @@ body{
 
 
     #header{
-        height:95px;
+        height:105px;
         background-color: #FFF;
 
 
@@ -47,14 +47,14 @@ body{
 
     .header-text{
         font-family: 'FG Heavy';
-        font-size:55px;
+        font-size:50px;
 
         position:relative;
         top:6px;
     }
 
     .header-img{
-        height:80px;
+        height:75px;
     }
 
     .header-opt-con{
